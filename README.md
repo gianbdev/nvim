@@ -66,8 +66,10 @@ Feel free to fork this repository and make contributions. For any issues or feat
 
 This configuration is licensed under the MIT License.
 
-### Notas
+### Notes:
 
-- **Reemplaza** `https://github.com/your-username/your-repository.git` con la URL de tu propio repositorio de GitHub.
-- **Actualiza** las instrucciones de instalación de plugins según el gestor de plugins que uses (`vim-plug`, `packer.nvim`, etc.).
-- **Ajusta** la sección de "Post-Installation" según los comandos y herramientas que uses.
+- **Replace** `https://github.com/your-username/your-repository.git` with the URL of your own GitHub repository.
+- **Update** the plugin installation instructions according to the plugin manager you use (`vim-plug`, `packer.nvim`, etc.).
+- **Adjust** the "Post-Installation" section based on the commands and tools you use.
+
+This `README.md` provides a clear and comprehensive guide to installing and configuring Neovim with your custom setup.
