@@ -14,6 +14,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   callback = reload_theme,
 })
 
+vim.opt.clipboard = 'unnamedplus'
 -- Most of the options are set by a global $HOME/.editorconfig.
 vim.opt.wrap = false
 vim.opt.showmatch = true
