@@ -11,6 +11,7 @@ require("formatter").setup({
     json = { require("formatter.filetypes.json").prettier },
     lua = { require("formatter.filetypes.lua").stylua },
     python = { require("formatter.filetypes.python").black },
+    php = { require("formatter.filetypes.php").php_cs_fixer },
     ruby = { require("formatter.filetypes.ruby").rubocop },
     rust = { require("formatter.filetypes.rust").rustfmt },
     svelte = { require("formatter.filetypes.svelte").prettier },

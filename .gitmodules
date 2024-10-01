@@ -76,3 +76,27 @@
 [submodule "pack/shell/start/asyncrun.vim"]
 	path = pack/shell/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim
+[submodule "pack/coding/start/conform.nvim"]
+	path = pack/coding/start/conform.nvim
+	url = https://github.com/stevearc/conform.nvim.git
+[submodule "pack/coding/start/laravel.nvim"]
+	path = pack/coding/start/laravel.nvim
+	url = https://github.com/adalessa/laravel.nvim.git
+[submodule "pack/coding/start/telescope.nvim"]
+	path = pack/coding/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "pack/coding/start/plenary.nvim"]
+	path = pack/coding/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "pack/coding/start/nui.nvim"]
+	path = pack/coding/start/nui.nvim
+	url = https://github.com/MunifTanjim/nui.nvim.git
+[submodule "pack/shell/start/tree-sitter-blade"]
+	path = pack/shell/start/tree-sitter-blade
+	url = https://github.com/EmranMR/tree-sitter-blade
+[submodule "pack/theme/start/neovim"]
+	path = pack/theme/start/neovim
+	url = https://github.com/rose-pine/neovim
+[submodule "pack/coding/start/vim-blade"]
+	path = pack/coding/start/vim-blade
+	url = https://github.com/jwalton512/vim-blade

@@ -1,6 +1,6 @@
 -- "Theme"
 local function reload_theme()
-  vim.cmd([[
+	vim.cmd([[
     match ExtraWhitespace /\s\+$/
     highlight ExtraWhitespace ctermbg=1
     highlight Whitespace ctermfg=236
@@ -10,11 +10,13 @@ end
 -- The following should survive changing the colorscheme
 reload_theme()
 vim.api.nvim_create_autocmd("ColorScheme", {
-  desc = "Cosmetic changes",
-  callback = reload_theme,
+	desc = "Cosmetic changes",
+	callback = reload_theme,
 })
 
-vim.opt.clipboard = 'unnamedplus'
+vim.cmd("syntax enable")
+vim.opt.clipboard = "unnamedplus"
+vim.opt.guifont = { "Menlo", "h12" }
 -- Most of the options are set by a global $HOME/.editorconfig.
 vim.opt.wrap = false
 vim.opt.showmatch = true
@@ -28,3 +30,5 @@ vim.keymap.set("n", "<C-N>", "<cmd>bnext<cr>")
 vim.keymap.set("n", "<C-P>", "<cmd>bprev<cr>")
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
 vim.g.mapleader = ","
+
+vim.cmd([[ autocmd BufRead,BufNewFile *.blade.php set filetype=blade ]])
