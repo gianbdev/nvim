@@ -1,15 +1,12 @@
-vim.o.background = "dark"
+-- asegúrate de activar soporte de colores truecolor
+vim.opt.termguicolors = true
 
-local c = require("vscode.colors").get_colors()
-require("vscode").setup({
-	transparent = true,
-	italic_comments = false,
-	group_overrides = {
-		StatusLine = { fg = c.vscFront, bg = c.vscUiBlue },
-		StatusLineNC = { fg = c.vscGray, bg = c.vscUiBlue },
-		LspInlayHint = { fg = c.vscGray },
-	},
-})
-require("vscode").load()
+-- usa el esquema por defecto
+vim.cmd("colorscheme default")
 
-vim.cmd("hi ModeMsg guibg=NONE")
+-- fuerza el fondo a negro puro
+vim.cmd("highlight Normal guibg=#000000 ctermbg=0")
+vim.cmd("highlight NormalNC guibg=#000000 ctermbg=0")
+vim.cmd("highlight LineNr guibg=#000000 ctermbg=0")
+vim.cmd("highlight SignColumn guibg=#000000 ctermbg=0")
+vim.cmd("highlight EndOfBuffer guibg=#000000 ctermbg=0")

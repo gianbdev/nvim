@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "c", "lua", "blueprint", "rust", "elixir", "html", "php" },
+	ensure_installed = { "c", "lua", "java", "blueprint", "rust", "elixir", "html", "php", "yaml" },
 	ignore_install = {},
 	sync_install = false,
 	auto_install = false,
